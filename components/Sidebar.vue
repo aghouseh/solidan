@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Sidebar">
     <h1>Let us help you focus on your work!</h1>
     <p>Contact us today and we’ll make sure that happens.</p>
 
@@ -90,10 +90,17 @@
       </form>
     </div>
     <!-- .formblock -->
-    <img alt="Oracle Gold Partner" src="~/assets/oracle-gold-partner.png" />
+    <img
+      alt="Oracle Gold Partner"
+      src="~/assets/images/oracle-gold-partner.png"
+    />
   </div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+.Sidebar {
+  padding-left: 20px;
+}
+</style>

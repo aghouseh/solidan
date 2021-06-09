@@ -1,5 +1,5 @@
 <template>
-  <img src="~/assets/logo-solidan.png" alt="Solidan" />
+  <img src="~/assets/images/logo-solidan.png" alt="Solidan" />
 </template>
 
 <style></style>

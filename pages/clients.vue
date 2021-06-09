@@ -1,29 +1,70 @@
 <template>
   <div class="clients-grid">
-    <img
-      src="~/assets/images/clients/rit-logo.png"
-      alt="Rochester Institute of Technology"
-    />
-    <img
-      src="~/assets/images/clients/bellevue-logo.png"
-      alt="Bellevue University"
-    />
-    <img
-      src="~/assets/images/clients/university-connecticut.png"
-      alt="University of Connecticut"
-    />
-    <img
-      src="~/assets/images/clients/loyola-university-chicago.png"
-      alt="Loyola University Chicago"
-    />
-    <img
-      src="~/assets/images/clients/logo_coe_vertical.png"
-      alt="City Colleges of Chicago"
-    />
-    <img src="~/assets/images/clients/UMASS-logo-NEW.jpg" alt="UMASS" />
+    <div
+      v-for="image in clientImages"
+      :key="image.name"
+      class="clients-grid-item"
+    >
+      <img
+        :src="getImageSrc(image.logo)"
+        :alt="image.name"
+        class="clients-grid-image"
+      />
+    </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'Clients',
+  data() {
+    return {
+      clientImages: [
+        {
+          name: 'Rochester Institute of Technology',
+          logo: 'rit-logo.png',
+        },
+        {
+          name: 'Bellevue University',
+          logo: 'bellevue-logo.png',
+        },
+        {
+          name: 'University of Connecticut',
+          logo: 'university-connecticut.png',
+        },
+        {
+          name: 'Loyola University Chicago',
+          logo: 'loyola-university-chicago.png',
+        },
+        {
+          name: 'City Colleges of Chicago',
+          logo: 'logo_coe_vertical.png',
+        },
+        {
+          name: 'UMASS',
+          logo: 'UMASS-logo-NEW.jpg',
+        },
+      ],
+    }
+  },
+  methods: {
+    getImageSrc(filename) {
+      return require(`~/assets/images/clients/${filename}`)
+    },
+  },
+}
+</script>
 
-<style></style>
+<style>
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.clients-grid-item {
+  width: 33.333%;
+}
+.clients-grid-image {
+  padding: 10%;
+}
+</style>

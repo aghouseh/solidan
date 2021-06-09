@@ -1,13 +1,18 @@
 <template>
   <div>
-    <h1>Solidan is an IT Consulting and Outsourcing Firm</h1>
+    <h3>
+      Disappointed with a project, registration, packaging, grading, billing,
+      advancement, etc???
+    </h3>
+    <p><img src="~/assets/images/student.jpg" alt="student.jpg" /></p>
     <p>
-      Solidan specializes in the enterprise integration of financial, human
-      resource, supply chain and customer relationship management (CRM)
-      applications and systems. Our IT consultants leverage their business
-      process knowledge and technical expertise to provide the&nbsp;integration,
-      support and training necessary to result in improved operational
-      efficiencies and increased profitability.&nbsp;
+      Solidan will focus on moving forward and achieving academic and
+      operational excellence for your academic institution. There is no need to
+      worry about how we ended up here; as long as, we understand how we end up
+      where we want to be. Our mission is to ensure your systems in higher
+      education are seamless. With years of satisfied clients, we have
+      established a continued relationship with the greater Higher Education
+      Industry.
     </p>
   </div>
 </template>
