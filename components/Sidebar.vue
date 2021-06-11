@@ -3,12 +3,8 @@
     <h1>Let us help you focus on your work!</h1>
     <p>Contact us today and we’ll make sure that happens.</p>
 
-    <div id="formblock85" class="formblock">
-      <form
-        id="miniSurveyView85"
-        method="post"
-        action="https://web.archive.org/web/20181227030338mp_/http://solidan.net/index.php?cID=126&amp;stackID=135&amp;bID=85&amp;btask=passthru_stack&amp;ccm_token=1477915358:5c773154c39c559268c5dd9dd0b64d4d&amp;method=submit_form#1370107381"
-      >
+    <div id="formblock85" name="formblock">
+      <form method="POST" name="contact" netlify>
         <div class="success" style="display: none">Thanks!</div>
 
         <div class="errors" style="display: none">
