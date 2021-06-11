@@ -3,14 +3,8 @@
     <h1>Let us help you focus on your work!</h1>
     <p>Contact us today and we’ll make sure that happens.</p>
 
-    <div id="formblock85" name="formblock">
+    <div name="formblock">
       <form method="POST" name="contact" netlify>
-        <div class="success" style="display: none">Thanks!</div>
-
-        <div class="errors" style="display: none">
-          <ul></ul>
-        </div>
-
         <ul class="form-fields">
           <li class="field field-text">
             <label for="Question1" class="visuallyhidden">
@@ -19,6 +13,7 @@
 
             <input
               id="Question1"
+              class="Sidebar-input"
               name="Question1"
               placeholder="Full Name *"
               type="text"
@@ -32,6 +27,7 @@
 
             <input
               id="Question2"
+              class="Sidebar-input"
               name="Question2"
               placeholder="Email *"
               type="email"
@@ -43,6 +39,7 @@
 
             <input
               id="Question3"
+              class="Sidebar-input"
               name="Question3"
               placeholder="Phone"
               type="tel"
@@ -58,6 +55,7 @@
             <textarea
               id="Question4"
               name="Question4"
+              class="Sidebar-input"
               placeholder="Brief description of how we can help *"
               cols="50"
               rows="3"
@@ -70,22 +68,9 @@
             Send Away
           </button>
         </div>
-
-        <div class="indicator" style="display: none">
-          <img
-            src="https://web.archive.org/web/20181227030338im_/http://solidan.net/concrete/images/throbber_white_16.gif"
-            width="16"
-            height="16"
-            alt=""
-          />
-          <span>Processing...</span>
-        </div>
-
-        <input name="qsID" type="hidden" value="1370107381" />
-        <input name="pURI" type="hidden" value="" />
       </form>
     </div>
-    <!-- .formblock -->
+
     <img
       alt="Oracle Gold Partner"
       src="~/assets/images/oracle-gold-partner.png"
@@ -98,5 +83,15 @@
 <style>
 .Sidebar {
   padding-left: 20px;
+}
+.Sidebar-input {
+  display: block;
+  width: 100%;
+}
+.field {
+  display: block;
+}
+.form-actions {
+  margin-top: 1em;
 }
 </style>
