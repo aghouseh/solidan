@@ -15,7 +15,7 @@
           </div>
           <nav>
             <ul class="nav">
-              <li class="nav-item">
+              <li id="nav-home" class="nav-item">
                 <nuxt-link to="/">Home</nuxt-link>
               </li>
               <li class="nav-item">
