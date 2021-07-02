@@ -81,8 +81,10 @@
 <script setup></script>
 
 <style>
-.Sidebar {
-  padding-left: 20px;
+@media only screen and (min-width: 1024px) {
+  .Sidebar {
+    padding-left: 20px;
+  }
 }
 .Sidebar-input {
   display: block;

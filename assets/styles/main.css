@@ -723,7 +723,6 @@ label,
 .grid--rev,
 .grid--full,
 .grid--center {
-  display: flex;
   list-style: none;
   margin-bottom: 0;
 }
@@ -1214,6 +1213,9 @@ header #header__left,
   }
 }
 @media only screen and (max-width: 1023px) {
+  #nav-home {
+    display: none;
+  }
   .portable-one-whole {
     width: 100%;
   }
@@ -1307,6 +1309,12 @@ header #header__left,
   }
 }
 @media only screen and (min-width: 1024px) {
+  .grid,
+  .grid--rev,
+  .grid--full,
+  .grid--center {
+    display: flex;
+  }
   .desk-one-whole {
     width: 100%;
   }
