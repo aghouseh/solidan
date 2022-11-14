@@ -1,13 +1,10 @@
 <template>
   <div>
-    <h1>Solidan is an IT Consulting and Outsourcing Firm</h1>
+    <h1>Solidan is a Higher Education Consulting Firm</h1>
     <p>
-      Solidan specializes in the enterprise integration of financial, human
-      resource, supply chain and customer relationship management (CRM)
-      applications and systems. Our IT consultants leverage their business
-      process knowledge and technical expertise to provide the&nbsp;integration,
-      support and training necessary to result in improved operational
-      efficiencies and increased profitability.&nbsp;
+      Solidan started in 2005 when it identified a gap between the consulting industry and the lack of understanding 
+      of Universities and Colleges.  PeopleSoft was the main SIS software leader.  Recruitment Plus was the leading
+      admissions software.  We started a quest to learn and engage all areas of an istitution.  
     </p>
   </div>
 </template>
