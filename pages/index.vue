@@ -1,14 +1,13 @@
 <template>
   <div>
     <h3>
-      Disappointed with a project, registration, packaging, grading, billing,
-      advancement, etc???
-    </h3>
-    <p><img src="~/assets/images/student.jpg" alt="student.jpg" /></p>
-    <p>
     Solidan, is a higher education consulting company that delivers expert information technology and integration support provided 
     by true Enrollment Management practitioners.  We have over 60+ years of combined experience in admissions, financial aid, marketing,
     analytics, training, integration, and IT support.   We have been in your shoes.  
+    </h3>
+    <p><img src="~/assets/images/student.jpg" alt="student.jpg" /></p>
+    <p>
+  
     
     We specialize in providing consulting for Technolution’s Slate, PeopleSoft Campus Solutions, and system integrations.   Our services provide 
     both leadership and full implementation teams posed to augment resources.  Solidan focuses on moving forward and achieving strategic and operational excellence 
