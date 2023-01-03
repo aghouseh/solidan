@@ -464,10 +464,6 @@ pre mark {
 img {
   max-width: 100%;
 }
-img[width],
-img[height] {
-  max-width: none;
-}
 .img--round {
   border-radius: 4px;
 }
@@ -2068,20 +2064,20 @@ footer {
   max-width: 1120px;
   margin: 0 auto;
 }
-@media (min-width: 1200px) {
-  header,
-  .shadow,
-  .container,
-  footer {
-    width: 1120px;
-  }
-}
 @media (min-width: 1024px) {
   header,
   .shadow,
   .container,
   footer {
     width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  header,
+  .shadow,
+  .container,
+  footer {
+    width: 1120px;
   }
 }
 @media (max-width: 1023px) {

@@ -60,6 +60,11 @@ export default {
 }
 .Slider {
   margin-bottom: 1em;
+
+  .flickity-viewport {
+    transition: height 0.2s;
+  }
+
   .flickity-prev-next-button {
     color: #2a659b;
     &:hover {
