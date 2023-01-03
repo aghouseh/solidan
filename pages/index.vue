@@ -7,9 +7,22 @@
       admissions, financial aid, marketing, analytics, training, integration,
       and IT support. We have been in your shoes.
     </h3>
-    <Flickity>
+    <Slider :options="sliderOptions">
       <img src="~/assets/images/student.jpg" alt="Medical student" />
-    </Flickity>
+      <img
+        src="~/assets/images/darya-tryfanava-d55fhArDES0-unsplash.jpg"
+        alt="University building"
+      />
+      <img
+        class="students"
+        src="~/assets/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg"
+        alt="Group of students lounging"
+      />
+      <img
+        src="~/assets/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg"
+        alt="Graduates throwing their caps in the air"
+      />
+    </Slider>
     <p>
       We specialize in providing consulting for Technolution's Slate, PeopleSoft
       Campus Solutions, and system integrations. Our services provide both
@@ -24,13 +37,31 @@
 </template>
 
 <script>
-import Flickity from 'vue-flickity'
+import Slider from '~/components/Slider.vue'
+
 export default {
   name: 'Home',
   components: {
-    Flickity,
+    Slider,
+  },
+  data() {
+    return {
+      sliderOptions: {
+        adaptiveHeight: true,
+        autoPlay: true,
+        imagesLoaded: true,
+        pageDots: false,
+        wrapAround: true,
+      },
+    }
   },
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.students {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: bottom center;
+}
+</style>
