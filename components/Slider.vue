@@ -1,24 +1,34 @@
 <template>
-  <client-only>
-    <Flickity ref="flickity" :options="flickityOptions"><slot /></Flickity>
-    <template #placeholder> Loading... </template>
-  </client-only>
+  <Flickity
+    v-if="isMounted"
+    ref="flickity"
+    class="Slider"
+    :options="flickityOptions"
+    ><slot
+  /></Flickity>
+  <div v-else class="Slider Slider--placeholder">
+    <slot />
+  </div>
 </template>
 
 <script>
 import imagesLoaded from 'imagesloaded'
-import Flickity from 'vue-flickity'
 
 export default {
   name: 'Slider',
   components: {
-    Flickity,
+    Flickity: () => import('vue-flickity'),
   },
   props: {
     options: {
       type: Object,
       default: () => ({}),
     },
+  },
+  data() {
+    return {
+      isMounted: false,
+    }
   },
   computed: {
     flickityOptions() {
@@ -31,6 +41,9 @@ export default {
       }
     },
   },
+  mounted() {
+    this.isMounted = true
+  },
   methods: {
     loadComplete() {
       if (this.$refs.flickity) {
@@ -41,11 +54,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.flickity-enabled {
+<style lang="scss">
+.Slider--placeholder > :not(:first-child) {
+  display: none;
+}
+.Slider {
   margin-bottom: 1em;
-  .button {
-    color: #b5dff4;
+  .flickity-prev-next-button {
+    color: #2a659b;
+    &:hover {
+      color: #b5dff4;
+    }
   }
 }
 </style>
