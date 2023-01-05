@@ -4,7 +4,8 @@
     <p>Contact us today and we’ll make sure that happens.</p>
 
     <div name="formblock">
-      <form method="POST" name="contact" netlify>
+      <form method="POST" name="contact" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <ul class="form-fields">
           <li class="field field-text">
             <label for="Question1" class="visuallyhidden">
