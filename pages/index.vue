@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h3>
+    <p>
       Solidan, is a higher education consulting company that delivers expert
       information technology and integration support provided by true Enrollment
       Management practitioners. We have over 60+ years of combined experience in
       admissions, financial aid, marketing, analytics, training, integration,
       and IT support. We have been in your shoes.
-    </h3>
+    </p>
     <Slider :options="sliderOptions">
       <img
         :srcset="require('~/assets/images/student.jpg').srcSet"
