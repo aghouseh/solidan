@@ -12,13 +12,19 @@ To increase enrollment and retention for our universities and colleges.
   </p>
     <p>
 <b> Core Values  </b>
+    </p><p>
 	1) We operate as if we see ourselves as applicants, students, and alumni
+     </p> <p>
 	2) We go above and beyond for our schools and each other
+     </p> <p>
 	3) We make no excuses
+      </p><p>
 	4) We do what we say we are going to do when we say we are going to do it
+    </p>
+    <p>
 	5) We are proactive rather than reactive
 	  </p>
-
+  </p>
   </div>
 </template>
 
