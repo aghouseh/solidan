@@ -12,8 +12,7 @@
       <a href="mailto:partners@solidan.net">partners@solidan.net</a>
     </p>
     <div class="partners-grid">
-      <img src="~/assets/images/partners/intrasee.png" alt="IntraSee" />
-      <img src="~/assets/images/partners/grayheller.png" alt="Gray Heller" />
+   
     </div>
   </div>
 </template>
