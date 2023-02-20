@@ -41,8 +41,8 @@ export default {
           logo: 'logo_coe_vertical.png',
         },
          {
-          name: 'Rochester Institute of Technology',
-          logo: 'rit.png',
+          name: 'Benedictine University',
+          logo: 'ben.png',
         },
         {
           name: 'UMASS',
