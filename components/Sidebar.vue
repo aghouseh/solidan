@@ -71,7 +71,10 @@
         </div>
       </form>
     </div>
-
+ <img
+      alt="Oracle Gold Partner"
+      src="~/assets/images/SlatePreferredPartner_Silver.png"
+    />
     <img
       alt="Oracle Gold Partner"
       src="~/assets/images/oracle-gold-partner.png"
