@@ -40,6 +40,10 @@ export default {
           name: 'City Colleges of Chicago',
           logo: 'logo_coe_vertical.png',
         },
+         {
+          name: 'Rochester Institute of Technology',
+          logo: 'rit.png',
+        },
         {
           name: 'UMASS',
           logo: 'UMASS-logo-NEW.jpg',
