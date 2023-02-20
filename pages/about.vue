@@ -24,7 +24,7 @@ To increase enrollment and retention for our universities and colleges.
     <p>
 	5) We are proactive rather than reactive
 	  </p>
-  </p>
+ 
   </div>
 </template>
 
