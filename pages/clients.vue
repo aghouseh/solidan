@@ -21,6 +21,14 @@ export default {
     return {
       clientImages: [
         {
+          name: 'University of Southern Mississippi',
+          logo: 'usm.jpg',
+        },
+        {
+          name: 'UMASS',
+          logo: 'UMASS-logo-NEW.jpg',
+        },
+        {
           name: 'Rochester Institute of Technology',
           logo: 'rit-logo.png',
         },
@@ -45,10 +53,6 @@ export default {
           logo: 'ben.png',
         },
         {
-          name: 'UMASS',
-          logo: 'UMASS-logo-NEW.jpg',
-        },
-        {
           name: 'Pennsylvania College of Art & Design',
           logo: 'pcad-logo.png',
         },
@@ -59,10 +63,6 @@ export default {
         {
           name: 'RMIT University of Vietnam',
           logo: 'rmitVietnam.png',
-        },
-        {
-          name: 'University of Southern Mississippi',
-          logo: 'usm.jpg',
         },
       ],
     }
@@ -96,6 +96,6 @@ export default {
   }
 }
 .clients-grid-image {
-  place-self: center start;
+  place-self: center;
 }
 </style>
