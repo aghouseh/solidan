@@ -21,6 +21,14 @@ export default {
     return {
       clientImages: [
         {
+          name: 'University of Southern Mississippi',
+          logo: 'usm.jpg',
+        },
+        {
+          name: 'UMASS',
+          logo: 'UMASS-logo-NEW.jpg',
+        },
+        {
           name: 'Rochester Institute of Technology',
           logo: 'rit-logo.png',
         },
@@ -40,10 +48,21 @@ export default {
           name: 'City Colleges of Chicago',
           logo: 'logo_coe_vertical.png',
         },
-        
         {
-          name: 'UMASS',
-          logo: 'UMASS-logo-NEW.jpg',
+          name: 'Benedictine University',
+          logo: 'ben.png',
+        },
+        {
+          name: 'Pennsylvania College of Art & Design',
+          logo: 'pcad-logo.png',
+        },
+        {
+          name: 'University of St. Thomas',
+          logo: 'Primary Academic Mark-UST-logo-RED Vertical-JPG.jpg',
+        },
+        {
+          name: 'RMIT University of Vietnam',
+          logo: 'rmitVietnam.png',
         },
       ],
     }
@@ -56,16 +75,27 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .clients-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media (min-width: 640px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2em;
+  }
+  margin-bottom: 3em;
 }
 .clients-grid-item {
-  width: 33.333%;
+  text-align: center;
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 639px) {
+    margin-block-end: 2em;
+  }
 }
 .clients-grid-image {
-  padding: 10%;
+  place-self: center;
 }
 </style>
